@@ -59,10 +59,10 @@ class App:
     def login(self):
 
         label = test(
-                image=self.most_recent_capture_arr,
-                model_dir='/home/tuandinh/PycharmProjects/Face Recognition/Silent-Face-Anti-Spoofing/resources/anti_spoof_models',
-                device_id=0
-                )
+            image=self.most_recent_capture_arr,
+            model_dir="/home/tuandinh/PycharmProjects/Face Recognition/Silent-Face-Anti-Spoofing/resources/anti_spoof_models",
+            device_id=0
+            )
 
         if label == 1:
 
@@ -77,7 +77,7 @@ class App:
                     f.close()
 
         else:
-            util.msg_box('Hey, you are a spoofer!', 'You are fake !')
+            util.msg_box('You are spoofer!', 'You are fake !')
 
     def logout(self):
 
